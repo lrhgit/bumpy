@@ -7,7 +7,9 @@ DATE: First published 2015; revised September 2026
 
 Originally developed by HPL with contributions by LRH; maintained and updated by LRH since 2016. 
 
-"Open in Google Colab": "https://colab.research.google.com/github/hplgit/bumpy/blob/master/doc/pub/basics.ipynb"
+"Open in Google Colab": "https://colab.research.google.com/github/lrhgit/bumpy/blob/master/doc/pub/basics.ipynb"
+
+
 
 !bsummary Contents
 This note introduces very basic programming elements, such as
