@@ -1,14 +1,20 @@
 TITLE: A short introduction to scientific Python programming
-AUTHOR: Hans Petter Langtangen at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
-AUTHOR: Leif Rune Hellevik at Biomechanics Group, Department of Structural Engineering NTNU
-DATE: today
+
+AUTHOR: Hans Petter Langtangen ("in memoriam": "https://www.simula.no/hpl-memorial") at Simula and  UiO
+AUTHOR: Leif Rune Hellevik at  NTNU
+
+DATE: First published 2015; revised September 2026
+
+Originally developed by HPL with contributions by LRH; maintained and updated by LRH since 2016. 
+
+"Open in Google Colab": "https://colab.research.google.com/github/hplgit/bumpy/blob/master/doc/pub/basics.ipynb"
 
 !bsummary Contents
 This note introduces very basic programming elements, such as
 
  * variables for numbers, lists, and arrays
  * while loops and for loops
- * functifions
+ * functions
  * if tests
  * plotting
 
@@ -16,8 +22,9 @@ through examples involving a mathematical formula. A glimpse of
 vectorization of code is also given.
 !esummary
 
+% if FORMAT != 'ipynb':
 TOC: on
-
+% endif
 
 !split
 
