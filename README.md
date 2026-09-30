@@ -1,27 +1,65 @@
-# bumpy
+# bumpy: Scientific Python examples
 
-Quick appetizer and first tutorial on scientific computing with Python
+A brief, application-driven introduction to scientific computing with Python,
 using examples from basic physics.
+
+## Try the basics tutorial
+
+Run the tutorial directly in your browser:
+
+[![Open basics in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lrhgit/bumpy/blob/master/doc/pub/basics.ipynb)
+
+No local Python installation is required.
 
 ## Contents
 
- * Part I introduces the fundamental Python syntax for
-   variables, loops, if-tests, arrays, plotting, files, and classes,
-   using a simple physics formula as example.
- * Part II is a real physics application involving analysis of mechanical
-   vibrations. Besides showing how typical scientific Matlab-style scripts
-   look in Python, this example also introduces more advanced concepts
-   like flexible storage of objects in lists and files, downloading
-   data from web sites, user input via the command line, unit testing,
-   symbolic mathematics, and modules.
+The repository contains two documents:
+
+- **basics** introduces fundamental Python concepts such as variables, loops,
+  conditionals, functions, arrays, plotting, files, and classes through a
+  simple mathematical example.
+- **bumpy** presents a more complete scientific application involving the
+  analysis of mechanical vibrations. It also introduces command-line input,
+  storage of objects, downloading data, unit testing, symbolic mathematics,
+  and modules.
+
+## History and current focus
+
+The material was originally developed by
+[Hans Petter Langtangen](https://www.simula.no/hpl-memorial) (HPL), with
+contributions by Leif Rune Hellevik (LRH). Following HPL's passing, LRH has
+maintained and updated the `basics` material; this work has continued since
+2016.
+
+Recent development and use have focused mainly on `basics` as a collection of
+demonstrations. Other applications of the material are covered elsewhere.
 
 ## Goal
 
-The goal of the tutorials is to bring the reader quickly up to speed
-with how Matlab-style programming (with functions of one variable)
-can be done in Python. With such basic background, it is easier to
-follow scientific courses and teaching material that apply Python as
-programming language. The tutorials are application-driven and brief.
-For further and more detailed information on scientific computing
-with Python we have compiled
-a [list of much more detailed tutorials and books](http://hplgit.github.io/bumpy/doc/pub/._bumpy010.html#app:resources).
+The tutorials are intended to help readers move quickly from Matlab-style
+programming to scientific programming in Python. This foundation makes it
+easier to follow scientific courses and teaching material that use Python.
+
+The examples are deliberately brief and application-driven.
+
+## Available formats
+
+The material is available in more forms than traditional text and slides.
+Jupyter notebooks (`ipynb`) have become particularly useful with Google Colab
+and JupyterHub at NTNU.
+
+Available generated material includes:
+
+- [the basics Jupyter notebook](doc/pub/basics.ipynb)
+- [the basics HTML version](doc/pub/basics.html)
+- slides and other generated documents in [`doc/pub`](doc/pub/)
+
+The DocOnce sources can also be used to generate PDF and Sphinx output.
+
+## Source and building
+
+The DocOnce source files and build scripts are located in
+[`doc/src`](doc/src/).
+
+See the [documentation source README](doc/src/README.md) for details about the
+source files, build scripts, and generated output.
