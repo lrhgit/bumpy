@@ -1,25 +1,32 @@
-This directory tree contains the source for two documents:
+# Documentation source and build scripts
 
- * A very basic introduction to scientific programming in Python (basics)
- * A demonstration of Python for a real scientific application (bumpy)
+This directory contains the DocOnce source files and build scripts for the
+project. For an introduction, project history, and links to the published
+material, see the [main README](../../README.md).
 
-The material was originally developed by Hans Petter Langtangen (HPL),
-with contributions by Leif Rune Hellevik (LRH). Following HPL's passing,
-LRH has maintained and updated the basics material; the source header records
-this work as continuing since 2016.
+## Source files
 
-Recent use has focused on basics as a collection of demonstrations. Other
-applications of the material are covered elsewhere.
+- `basics.do.txt` — basic scientific Python demonstrations
+- `bumpy.do.txt` — a scientific application involving mechanical vibrations
+- `lectures-basics.do.txt` and `lectures-bumpy.do.txt` — wrappers for lecture
+  and slide material
+- `lectures_tkt4140.do.txt` — course-specific lecture material
 
-The source is written in DocOnce and can be published in more forms than text
-and slides. In particular, Jupyter notebooks (ipynb) have become a more
-appealing way to use the material with the advent of Google Colab and
-JupyterHub at NTNU. The generated forms also include HTML, PDF, and Sphinx.
+Supporting programs and media are located in:
 
-The main source files are basics.do.txt and bumpy.do.txt. Slide material is in
-the lec-bumpy subdirectory, with wrapper files for title, author, and related
-metadata in lectures-basics.do.txt and lectures-bumpy.do.txt.
+- `src-bumpy/`
+- `lec-bumpy/`
+- `fig-bumpy/`
+- `mov-bumpy/`
 
-The script make.sh compiles the two texts, while make_lec.sh builds the two
-slide collections. Generated documents are copied to ../pub for publishing on
-the web.
+## Building
+
+- `make.sh` builds the main material. It currently defaults to `basics` and
+  generates HTML and Jupyter notebook output.
+- `make_lec.sh` builds lecture and slide collections in several formats.
+- `clean.sh` removes generated working files.
+
+Files intended for publication are copied to [`../pub`](../pub/).
+
+The DocOnce sources support output such as HTML, Jupyter notebooks (`ipynb`),
+slides, PDF, and Sphinx.
