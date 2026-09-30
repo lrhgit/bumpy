@@ -1,20 +1,25 @@
-This directory tree contains the source code of two documents:
+This directory tree contains the source for two documents:
 
  * A very basic introduction to scientific programming in Python (basics)
- * Demonstration of Python for a real scientific application (bumpy)
+ * A demonstration of Python for a real scientific application (bumpy)
 
-There are two versions of the documents:
+The material was originally developed by Hans Petter Langtangen (HPL),
+with contributions by Leif Rune Hellevik (LRH). Following HPL's passing,
+LRH has maintained and updated the basics material; the source header records
+this work as continuing since 2016.
 
- * Text
- * Slides
+Recent use has focused on basics as a collection of demonstrations. Other
+applications of the material are covered elsewhere.
 
-The source is written in DocOnce. The text versions are in
-basics.do.txt and bumpy.do.txt. The slides are in the subdirectory
-lec-bumpy with wrapper files for title, author,
-etc. in lectures-basics.do.txt ad lectures-bumpy.do.txt.
+The source is written in DocOnce and can be published in more forms than text
+and slides. In particular, Jupyter notebooks (ipynb) have become a more
+appealing way to use the material with the advent of Google Colab and
+JupyterHub at NTNU. The generated forms also include HTML, PDF, and Sphinx.
 
-A script make.sh compiles the two texts, while make_lec.sh makes the
-two slides collections.
+The main source files are basics.do.txt and bumpy.do.txt. Slide material is in
+the lec-bumpy subdirectory, with wrapper files for title, author, and related
+metadata in lectures-basics.do.txt and lectures-bumpy.do.txt.
 
-All compiled documents in HTML, PDF, and Sphinx format are copied to
-../pub for publishing on the web.
+The script make.sh compiles the two texts, while make_lec.sh builds the two
+slide collections. Generated documents are copied to ../pub for publishing on
+the web.
